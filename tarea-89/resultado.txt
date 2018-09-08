@@ -1,0 +1,1 @@
+('Aprovados: ', 5.0, ' Desaprobados: ', 2.0, ' Promedio aprovados: ', 5.166666666666667)
