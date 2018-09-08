@@ -31,9 +31,9 @@ for x in entrada:
 
 csvarchivo.close()
 
-print("Aprovados: ",aprobados," Desaprobados: ",desaprovados, " Promedio aprovados: ",notasaprovados/notas)
+print('Aprovados: ',aprobados,'\nDesaprobados: ',desaprovados, '\nPromedio aprovados: ',notasaprovados/notas)
 
-resultado = "Aprovados: ",aprobados," Desaprobados: ",desaprovados, " Promedio aprovados: ",notasaprovados/notas
+resultado = "Aprovados: "+str(aprobados)+"\nDesaprobados: "+str(desaprovados)+"\nPromedio aprovados: "+str(notasaprovados/notas)
 
 print("3)-------------------------------")
 f = open("resultado.txt", "w") #abro en lectura
@@ -41,13 +41,13 @@ f.write(str(resultado)) #escribe
 f.close()
 
 print("5)-------------------------------")
-f = open("numeros1.csv", "w") #abro en lectura
+f = open("numeros1.csv", "w") #abro en ESCRI
 f.write('Numeros\n') #escribe
 f.write('1\n') #escribe
 f.write('-2\n')
 f.close()
 
-f = open("numeros2.csv", "w") #abro en lectura
+f = open("numeros2.csv", "w") #abro en ESCRI
 f.write('Numeros\n') #escribe
 f.write('-1\n') #escribe
 f.write('2\n')
@@ -65,12 +65,12 @@ for x in entrada:
   if(numeroleido >= 0 ):
     print(numeroleido,"es mayor a 0")
     f = open("numerospositivos.csv", "a") 
-    f.write(str(numeroleido))
+    f.write(str(numeroleido)+"\n")
     f.close()
   else:
     print(numeroleido,"es menor a 0")
     f = open("numerosnegativos.csv", "a") 
-    f.write(str(numeroleido))
+    f.write(str(numeroleido)+"\n")
     f.close()
 
 
